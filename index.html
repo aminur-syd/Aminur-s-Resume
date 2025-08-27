@@ -6,102 +6,8 @@
     <title>Aminur's Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f0f4f8; /* Light blue-gray background */
-        }
-        .resume-container {
-            max-width: 900px; /* Increased max-width for a slightly wider resume */
-            margin: 2rem auto;
-            background-color: #ffffff;
-            border-radius: 12px; /* Slightly larger border radius */
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, more spread out shadow */
-            overflow: hidden; /* Ensures child elements respect border radius */
-        }
-        .header-section {
-            background-color: #2c3e50; /* Darker, sophisticated blue */
-            color: #ffffff;
-            padding: 2.5rem; /* Increased padding */
-            border-top-left-radius: 12px;
-            border-top-right-radius: 12px;
-        }
-        .section-title {
-            font-size: 1.4rem; /* Slightly larger section titles */
-            font-weight: 700;
-            color: #1a202c; /* Darker text for titles */
-            margin-bottom: 1.5rem; /* More space below titles */
-            padding-bottom: 0.5rem;
-            border-bottom: 3px solid #3498db; /* Accent color border */
-            display: inline-block; /* Ensures border only spans text width */
-        }
-        .content-section {
-            padding: 2rem 2.5rem; /* Consistent padding */
-        }
-        .job-title, .degree-title {
-            font-weight: 600;
-            color: #2c3e50; /* Dark blue for titles */
-        }
-        .company-name, .institution-name {
-            color: #3498db; /* Accent color for company/institution */
-            font-weight: 500;
-        }
-        .date-range {
-            color: #718096; /* Medium gray for dates */
-            font-style: italic;
-        }
-        .skill-tag {
-            background-color: #e0f2fe; /* Lighter blue for skill tags */
-            color: #102e3f; /* Darker blue text for skill tags */
-            padding: 0.5rem 1rem;
-            border-radius: 20px; /* Pill-shaped tags */
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
-        .contact-icon {
-            width: 20px;
-            height: 20px;
-            margin-right: 0.75rem; /* More space next to icon */
-            vertical-align: middle;
-        }
-        /* Ensure images have fallbacks */
-        img {
-            background-color: #e2e8f0; /* Placeholder background */
-        }
-        /* Print specific styles */
-        @media print {
-            body {
-                background-color: #ffffff;
-                -webkit-print-color-adjust: exact; /* Ensures colors print in Chrome/Safari */
-                print-color-adjust: exact; /* Standard */
-            }
-            .resume-container {
-                margin: 0;
-                box-shadow: none;
-                border-radius: 0;
-                max-width: 100%;
-            }
-            .header-section {
-                border-radius: 0;
-            }
-            .no-print {
-                display: none;
-            }
-            /* Ensure dark text on white background for printing */
-            .header-section, .header-section h1, .header-section p, .header-section a {
-                color: #000000 !important; /* Black text on white for print */
-            }
-            .header-section {
-                background-color: #f0f0f0 !important; /* Light gray background for header in print */
-            }
-             .skill-tag {
-                background-color: #eeeeee !important;
-                color: #333333 !important;
-                border: 1px solid #cccccc;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
 
@@ -109,10 +15,10 @@
         <header class="header-section text-center sm:text-left">
             <div class="flex flex-col sm:flex-row items-center sm:items-start">
                 <img 
-                    src="aminur.jpg" 
+                    src="pictures/aminur.jpg" 
                     alt="Aminur Rahman" 
                     class="w-24 h-24 sm:w-32 sm:h-32 rounded-full border-4 border-white shadow-lg mb-4 sm:mb-0 sm:mr-8"
-                    onerror="this.src='profile pic.jpg'; this.alt='Error loading image';"
+                    onerror="this.src='pictures/profile pic.jpg'; this.alt='Error loading image';"
                 >
                 <div>
                     <h1 class="text-4xl sm:text-5xl font-bold tracking-tight">Aminur Rahman</h1>
@@ -124,7 +30,7 @@
                         </p>
                         <p>
                             <svg class="contact-icon inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
-                            <a href="0323653981@student.wub.edu.bd" class="hover:text-blue-300">0323653981@student.wub.edu.bd</a>
+                            <a href="mailto:sydneyaminur@gmail.com" class="hover:text-blue-300">sydneyaminur@gmail.com</a>
                         </p>
                         <p>
                             <svg class="contact-icon inline-block" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0012 11z" clip-rule="evenodd"></path></svg>
@@ -208,6 +114,15 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="mb-8">
+                    <h2 class="section-title">Awards & Certifications</h2>
+                    <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <li>I've complited my IELTS from British American Resource Center with the score of 7. (2022)</li>
+                        <li>Awarded First Place in the 2022 Debate Competition on Global Warming, held at the NTV.</li>
+                        <li>Official Partner of PUBG Mobile Bangladesh and Host for PUBG Mobile Esports events, recognized for professional live streaming and tournament coverage.</li>
+                    </ul>
+                </section>
             </div>
 
             <div class="md:col-span-1 content-section bg-gray-50 md:bg-transparent rounded-b-lg md:rounded-bl-none md:rounded-r-lg">
@@ -257,14 +172,7 @@
                     </ul>
                 </section>
 
-                <section>
-                    <h2 class="section-title">Awards & Certifications</h2>
-                    <ul class="list-disc list-inside text-gray-700 space-y-1">
-                        <li>I've complited my IELTS from British American Resource Center with the score of 7. (2022)</li>
-                        <li>Awarded First Place in the 2022 Debate Competition on Global Warming, held at the NTV.</li>
-                        <li>Official Partner of PUBG Mobile Bangladesh and Host for PUBG Mobile Esports events, recognized for professional live streaming and tournament coverage.</li>
-                    </ul>
-                </section>
+                
             </div>
         </div>
     </div>

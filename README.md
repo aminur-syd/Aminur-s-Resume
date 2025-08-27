@@ -1,6 +1,6 @@
 # Aminur’s Resume
 
-Professional, single-page resume website built with semantic HTML and Tailwind CSS.
+Professional, single-page resume website built with semantic HTML and CSS.
 
 ## Live Preview
 - View the site: https://sydneyaminur.github.io/Aminur-s-Resume/
@@ -19,7 +19,7 @@ This repository contains the source for a responsive resume page featuring a cle
 - HTML5
 - Tailwind CSS (via CDN)
 - Google Fonts (Inter)
-- Minimal custom CSS (see `index.css`)
+- Minimal custom CSS (see `style.css`)
 
 ## Quick Start
 1. Clone or download this repository.
@@ -29,14 +29,14 @@ This repository contains the source for a responsive resume page featuring a cle
 
 ## Project Structure
 - `index.html` — Main resume page
-- `index.css` — Custom styles complementing Tailwind
-- `aminur.jpg` — Profile image
+- `style.css` — Custom styles complementing Tailwind
+- `pictures/aminur.jpg` — Profile image
 - `README.md` — Project documentation
 
 ## Customize
 - Edit text content directly in `index.html` (Summary, Experience, Projects, Skills, etc.).
-- Replace `aminur.jpg` with your own photo (update the filename if needed).
-- Tweak colors and spacing in `index.css` or Tailwind utility classes.
+- Replace `pictures/aminur.jpg` with your own photo (update the filename if needed).
+- Tweak colors and spacing in `style.css` or Tailwind utility classes.
 
 ---
 Maintained by Aminur Rahman — GitHub: https://github.com/sydneyaminur
