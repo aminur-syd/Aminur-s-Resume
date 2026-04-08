@@ -3,7 +3,7 @@
 Professional, single-page resume website built with semantic HTML and CSS.
 
 ## Live Preview
-- View the site: https://sydneyaminur.github.io/Aminur-s-Resume/
+- View the site: [https://sydneyaminur.github.io/Aminur-s-Resume/](https://aminur-syd.github.io/Aminur-s-Resume/)
 
 ## Overview
 This repository contains the source for a responsive resume page featuring a clean layout, print-friendly styles, and quick links to contact details and social profiles.
